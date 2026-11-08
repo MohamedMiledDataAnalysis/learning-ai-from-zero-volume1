@@ -1,0 +1,19 @@
+{
+  "model": "qwen2.5:7b",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "You answer questions about the Thames Auto Receivables 2026-1 prospectus. Use only the passages provided. After each statement, cite the page in brackets, e.g. (page 9). If the passages do not contain the answer, say: 'The passages provided do not answer this.'"
+    },
+    {
+      "role": "user",
+      "content": "Passages:\n[Passage 1, page 9, 6. Reserve fund and trigger events]\nTest 1 — Cumulative default ratio. The cumulative default ratio must not exceed: Periods Maximum cumulative default ratio Periods 1 to 6 1.00% Periods 7 to 12 2.00% Test 2 — 90+ day arrears ratio. The 90+ day arrears ratio must not exceed 1.25%.\n\n[Passage 2, page 9, 6. Reserve fund and trigger events]\nPeriods 7 to 12 2.00% Test 2 — 90+ day arrears ratio. The 90+ day arrears ratio must not exceed 1.25%. Test 3 — Reserve fund. After the previous payment date, the reserve fund must be at its required amount. Consequence. From the payment date that follows the period in which a trigger event occurs,\n\n[Passage 3, page 9, 6. Reserve fund and trigger events]\namount. Consequence. From the payment date that follows the period in which a trigger event occurs, principal is paid sequentially (section 2). The switch is permanent, even if the test is passed again in a later period. Reporting. Within 15 days after each payment date, the servicer publishes an investor report\n\nQuestion: What is the limit for the 90+ day arrears ratio, and what happens if it is exceeded?"
+    }
+  ],
+  "content": "The limit for the 90+ day arrears ratio is 1.25% (page 9, Passage 1 and Passage 2). If this ratio is exceeded, the trigger event will cause a change in the payment structure, specifically, principal is paid sequentially (page 9, Passage 3)."
+}

@@ -41,10 +41,13 @@ def test_corner_shop_answer_and_memory():
     assert tool_count(out) == 6 and len(out["steps"]) == 7 and len(out["memory"]) == 15
 
 
-def test_replay_without_recording_prints_the_pending_line():
+def test_replay_prints_the_recording_or_the_pending_line():
     out = script("python/vol1/ch30/shop_agent_live.py")
-    expected = "[Recording pending: run python record_all.py with Ollama installed, then rebuild]\n"
-    assert out == expected or out.startswith("Answer:")
+    if (REPO / "python" / "recordings" / "vol1-ch30-shop.jsonl").exists():
+        assert out.startswith("[step 1] tool ") and "\nAnswer: " in out
+        assert out.endswith("Stopped because: final answer\n")
+    else:
+        assert out == "[Recording pending: run python record_all.py with Ollama installed, then rebuild]\n"
 
 
 def test_rules_mode_in_chapter_30_matches_chapter_29():

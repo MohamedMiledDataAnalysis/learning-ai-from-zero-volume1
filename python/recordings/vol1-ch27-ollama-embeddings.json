@@ -1,0 +1,21 @@
+{
+  "model": "nomic-embed-text",
+  "query": "Which loans were eligible?",
+  "top": [
+    {
+      "chunk": 41,
+      "page": 7,
+      "score": 0.7518
+    },
+    {
+      "chunk": 32,
+      "page": 5,
+      "score": 0.678
+    },
+    {
+      "chunk": 34,
+      "page": 6,
+      "score": 0.6645
+    }
+  ]
+}

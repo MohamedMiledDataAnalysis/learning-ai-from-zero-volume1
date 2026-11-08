@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "Has any trigger been breached this period?"
+    }
+  ],
+  "content": "To provide an accurate answer, I would need more context about which specific trigger or system you are referring to. Could you please specify the domain or area where this trigger exists, such as a security system, a software application, or a specific process? Additionally, knowing the time period you are interested in would also be helpful."
+}

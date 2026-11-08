@@ -1,0 +1,4 @@
+{"content": "", "tool_calls": [{"name": "get_price", "arguments": {"item": "apple"}}, {"name": "get_price", "arguments": {"item": "bread"}}]}
+{"content": "", "tool_calls": [{"name": "get_price", "arguments": {"item": "loaf of bread"}}]}
+{"content": "", "tool_calls": [{"name": "multiply", "arguments": {"a": 0.45, "b": 3}}, {"name": "multiply", "arguments": {"a": 1.2, "b": 2}}, {"name": "add", "arguments": {"a": 1.35, "b": 2.4}}, {"name": "gbp_to_eur", "arguments": {"amount": 3.75}}]}
+{"content": "The cost of 3 apples and 2 loaves of bread is 4.31 euros.", "tool_calls": []}
