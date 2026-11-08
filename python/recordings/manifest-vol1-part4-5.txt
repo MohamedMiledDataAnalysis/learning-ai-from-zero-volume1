@@ -1,0 +1,4 @@
+# Volume 1, Parts IV and V: model replies printed in chapters 24 and 27.
+python python/vol1/ch24/prompts.py ask --mode record
+python python/vol1/ch27/ollama_embeddings.py --mode record
+python python/vol1/ch27/rag_prompt.py ask --mode record

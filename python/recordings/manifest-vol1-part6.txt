@@ -1,0 +1,2 @@
+# Commands run by python/record_all.py (needs Ollama with qwen2.5:7b)
+python python/vol1/ch30/shop_agent_live.py --mode record
