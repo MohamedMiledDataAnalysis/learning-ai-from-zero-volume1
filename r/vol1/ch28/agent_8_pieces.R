@@ -98,7 +98,7 @@ run <- function(brain, max_steps) {
   for (step in seq_len(max_steps)) {
     reply <- brain(memory)                                       # the pilot decides
     memory[[length(memory) + 1]] <- list(role = "assistant", content = reply$content,
-                                         tool_calls = lapply(reply$tool_calls, function(c) list(`function` = c)))
+      tool_calls = lapply(reply$tool_calls, function(c) list(`function` = c)))
     # ── PIECE 6 — STOPPING RULES ── (landing)
     if (length(reply$tool_calls) == 0) {
       log_step(step, paste("[6 STOP] final answer:", reply$content))

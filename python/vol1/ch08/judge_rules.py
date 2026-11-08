@@ -1,4 +1,4 @@
-"""Chapter 8 — judging simple prediction rules on the real loans.
+"""Chapter 8 — judging simple prediction rules on all the loans of the tape.
 
 Question: which loans will fall 3 or more instalments behind (90+ days in arrears)
 at some point in 2026? The answer is known: it is in data/loan_performance.csv.
