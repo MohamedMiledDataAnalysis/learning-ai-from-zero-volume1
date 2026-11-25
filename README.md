@@ -40,3 +40,8 @@ You can also record on GitHub: **Actions > Record model replies > Run workflow**
 `recordings` artifact and copy its files into `python/recordings/` and `r/recordings/`.
 
 All names, loans and figures in the deal data are fictional.
+
+## Licence
+
+- **Code**: MIT licence (see `LICENSE`). Reuse it freely in your own projects.
+- **Written material** (solutions, corrections, READMEs, guides, documents and data files): © 2026 Mohamed Miled, all rights reserved, like the book *Learning AI from Zero, Volume 1: Understanding AI*. Read it and study with it; do not copy, republish or sell it (see `LICENSE-TEXT.md`).
